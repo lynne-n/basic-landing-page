@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cleansie Home</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+
+        .header {
+            background-color: transparent;
+            color:#4ac9f0 ;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: black;
+        }
+
+        .menu {
+            text-align: center;
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .info {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .box-container {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content:left;
+            align-items: center;
+            max-width:  50%;
+            max-height:  100%;
+        }    
+        .numbered-box {
+            background-color: none;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 30px;
+            text-align: center;
+            flex: 1;
+            width: 50%;
+           height: 50%;
+        }
+        .numbered-box span {
+            display: block;
+            width: 30%;
+            height: 20%;
+            background-color: #4ac9f0;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            margin: 0 auto 10px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation button {
+            background-color: #4ac9f0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .navigation button:hover {
+            background-color: aqua;
+        }
+        .learn-more-button{
+            margin-top: 0px;
+            background-color: #4ac9f0;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .learn-more-button:hover{
+            background-color: aqua;
+        }
+        h1{
+        color: #212121;
+        text-decoration: none!important;
+        opacity: 1;      
+        }
+        h2{
+        color: #4ac9f0;
+        padding-top: 20px;
+        font-size: 5px;
+        line-height: 40px;
+        padding-bottom: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+.box-image{
+    justify-content: left;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <h1>Cleansie</h1>
+        </div>
+        <div class="menu">
+            <a href="">SERVICES</a> 
+            <a href="">INQUIRIES</a> 
+            <a href="">FAQS</a> 
+            <a href="">ADMIN</a> 
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info">
+            <h1>WELCOME TO CLEANSIE</h1><br><br>
+            <h2>YOUR SOLUTION TO POOL CLEANING AND TANK CLEANING.<br><br> WE ALSO OFFER QUALITY EQUIPMENT FOR HIRING.</p></h2>
+            <p>WHETHER A CLEANING PACKAGE OR EQUIPMENT PACKAGE, WE GOT YOU COVERED</p><br><br>
+            <a href="package.php" class="learn-more-button">LEARN MORE</a>
+        </div>
+        <div class="box-container">
+            <div class="numbered-box">
+                <span>01</span>
+                <h3>POOL CLEANING</h3>
+                <p>We offer top-notch pool cleaning services to keep your pool clean and safe for swimming.</p>
+                <div class="box-image">
+                    <img src=".jpg" alt=" Cleaning Image">
+                </div>
+            </div>
+            <div class="numbered-box">
+                <span>02</span>
+                <h3>TANK CLEANING</h3>
+                <p>Our tank cleaning services ensure the cleanliness and safety of your water storage tanks.</p>
+                <div class="box-image">
+                    <img src=".jpg" alt="Tank Cleaning Image">
+                </div>
+            </div>
+            <div class="numbered-box">
+                <span>03</span>
+                <h3>EQUIPMENT HIRING</h3>
+                <p>Need equipment for your cleaning needs? We offer equipment hiring services for your convenience.</p>
+                <div class="box-image">
+                    <img src=".jpg" alt="Equipment Image">
+                </div>
+            </div>
+            <div class="navigation">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for handling next and previous navigation buttons
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const boxes = document.querySelectorAll('.numbered-box');
+        let currentIndex = 0;
+
+        function showBox(index) {
+            boxes.forEach((box, i) => {
+                if (i === index) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showBox(currentIndex);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < boxes.length - 1) {
+                currentIndex++;
+                showBox(currentIndex);
+            }
+        });
+
+        // Initially show the first box
+        showBox(currentIndex);
+    </script>
+</body>
+</html>
